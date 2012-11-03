@@ -1,4 +1,16 @@
+@import "compass";
 @import "compass/reset";
+
+
+// variables
+
+$main_raspberry: rgb(166,63,90);
+$main_moss: rgb(179,191,86);
+$main_creme: rgb(242,235,136);
+$main_pumpkin: rgb(242,164,68);
+$main_rapha: rgb(242,114,114);
+
+// page styling
 
 body, html {
   height: 100%;
@@ -8,33 +20,60 @@ div.wrapper {
   width: 100%;
   height: 100%;
   background: rgb(230,230,230);
-
-  span.bg {
-    width: 20%;
-    height: 100%;
-    float: left;
-    display: inline-block;
-    
-    &.one {
-      background: rgb(166,63,90);
-    }
-    &.two {
-      background: rgb(179,191,86);
-    }
-    &.three {
-      background: rgb(242,235,136);
-    }
-    &.four {
-      background: rgb(242,164,68);
-    }
-    &.five {
-      background: rgb(242,114,114);
-    }
-  }
-
-  div.container {
+  
+  > header {
+    height: 50px;
+    width: 100%;
     position: absolute;
-    top: 400px;
-    left:40%;
+    top: 0;
+    z-index: 2;
+    $experimental-support-for-svg: true;
+    @include background-image(linear-gradient(rgb(40,40,40), rgb(20,20,20)));
+    @include box-shadow(rgba(50,50,50,0.3) 0 5px 10px);
+ 
+  }
+  > div.container {
+    display: block;
+    padding-top: 50px;
+    height: 100%;
+
+    section#main_content {
+      height: 100%;
+      display: inline-block;
+      width: 100%;
+      
+      div.section {
+        display: inline-block;
+        width: 20%;
+        height: 100%;
+        float: left;
+        text-align: center;
+
+        &.blog {
+          background: $main_raspberry;
+        }
+        &.about {
+          background: $main_moss;
+        }
+        &.work {
+          background: $main_creme;
+        }
+        &.contact {
+          background: $main_pumpkin;
+        }
+        &.tbd {
+          background: $main_rapha;
+        }
+
+        h2 {
+          font-family: 'Open Sans', arial, sans-serif;
+          font-size: 6.0em;
+          @include transform(rotate(90deg));
+          color: #fff;
+          margin-top: 80px;
+          cursor: pointer;
+        }
+      }
+    }
   }
 }
