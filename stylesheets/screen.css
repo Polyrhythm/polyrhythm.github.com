@@ -69,35 +69,35 @@ body, html {
 }
 
 /* line 7, ../sass/screen.scss */
-div.container {
+div.wrapper {
   width: 100%;
   height: 100%;
   background: #e6e6e6;
 }
 /* line 12, ../sass/screen.scss */
-div.container span.bg {
+div.wrapper span.bg {
   width: 20%;
   height: 100%;
   float: left;
   display: inline-block;
 }
 /* line 18, ../sass/screen.scss */
-div.container span.bg.one {
+div.wrapper span.bg.one {
   background: #a63f5a;
 }
 /* line 21, ../sass/screen.scss */
-div.container span.bg.two {
+div.wrapper span.bg.two {
   background: #b3bf56;
 }
 /* line 24, ../sass/screen.scss */
-div.container span.bg.three {
+div.wrapper span.bg.three {
   background: #f2eb88;
 }
 /* line 27, ../sass/screen.scss */
-div.container span.bg.four {
+div.wrapper span.bg.four {
   background: #f2a444;
 }
 /* line 30, ../sass/screen.scss */
-div.container span.bg.five {
+div.wrapper span.bg.five {
   background: #f27272;
 }
