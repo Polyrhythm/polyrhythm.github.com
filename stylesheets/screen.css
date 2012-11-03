@@ -101,3 +101,9 @@ div.wrapper span.bg.four {
 div.wrapper span.bg.five {
   background: #f27272;
 }
+/* line 35, ../sass/screen.scss */
+div.wrapper div.container {
+  position: absolute;
+  top: 400px;
+  left: 40%;
+}
