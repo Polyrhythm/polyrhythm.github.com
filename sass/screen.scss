@@ -1,15 +1,11 @@
-/* Welcome to Compass.
- * In this file you should write your main styles. (or centralize your imports)
- * Import this file using the following HTML or equivalent:
- *  */
-
 @import "compass/reset";
 
 body, html {
   height: 100%;
 }
 
-div.wrapper {
+div.container {
+  width: 100%;
   height: 100%;
   background: rgb(5,242,242);
 }
