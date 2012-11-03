@@ -8,4 +8,27 @@ div.container {
   width: 100%;
   height: 100%;
   background: rgb(230,230,230);
+
+  span.bg {
+    width: 20%;
+    height: 100%;
+    float: left;
+    display: inline-block;
+    
+    &.one {
+      background: rgb(166,63,90);
+    }
+    &.two {
+      background: rgb(179,191,86);
+    }
+    &.three {
+      background: rgb(242,235,136);
+    }
+    &.four {
+      background: rgb(242,164,68);
+    }
+    &.five {
+      background: rgb(242,114,114);
+    }
+  }
 }
