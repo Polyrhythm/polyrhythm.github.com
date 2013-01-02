@@ -69,12 +69,17 @@ body, html {
 }
 
 /* line 19, ../sass/screen.scss */
+a {
+  text-decoration: none;
+}
+
+/* line 23, ../sass/screen.scss */
 div.wrapper {
   width: 100%;
   height: 100%;
   background: #e6e6e6;
 }
-/* line 24, ../sass/screen.scss */
+/* line 28, ../sass/screen.scss */
 div.wrapper > header {
   height: 50px;
   width: 100%;
@@ -92,19 +97,19 @@ div.wrapper > header {
   -moz-box-shadow: rgba(50, 50, 50, 0.3) 0 5px 10px;
   box-shadow: rgba(50, 50, 50, 0.3) 0 5px 10px;
 }
-/* line 35, ../sass/screen.scss */
+/* line 39, ../sass/screen.scss */
 div.wrapper > div.container {
   display: block;
   padding-top: 50px;
   height: 100%;
 }
-/* line 40, ../sass/screen.scss */
+/* line 44, ../sass/screen.scss */
 div.wrapper > div.container section#main_content {
   height: 100%;
   display: inline-block;
   width: 100%;
 }
-/* line 45, ../sass/screen.scss */
+/* line 49, ../sass/screen.scss */
 div.wrapper > div.container section#main_content div.section {
   display: inline-block;
   width: 20%;
@@ -112,27 +117,27 @@ div.wrapper > div.container section#main_content div.section {
   float: left;
   text-align: center;
 }
-/* line 52, ../sass/screen.scss */
+/* line 56, ../sass/screen.scss */
 div.wrapper > div.container section#main_content div.section.blog {
   background: #a63f5a;
 }
-/* line 55, ../sass/screen.scss */
+/* line 59, ../sass/screen.scss */
 div.wrapper > div.container section#main_content div.section.about {
   background: #b3bf56;
 }
-/* line 58, ../sass/screen.scss */
+/* line 62, ../sass/screen.scss */
 div.wrapper > div.container section#main_content div.section.work {
   background: #f2eb88;
 }
-/* line 61, ../sass/screen.scss */
+/* line 65, ../sass/screen.scss */
 div.wrapper > div.container section#main_content div.section.contact {
   background: #f2a444;
 }
-/* line 64, ../sass/screen.scss */
+/* line 68, ../sass/screen.scss */
 div.wrapper > div.container section#main_content div.section.tbd {
   background: #f27272;
 }
-/* line 68, ../sass/screen.scss */
+/* line 72, ../sass/screen.scss */
 div.wrapper > div.container section#main_content div.section h2 {
   font-family: 'Open Sans', arial, sans-serif;
   font-size: 6.0em;
@@ -145,7 +150,7 @@ div.wrapper > div.container section#main_content div.section h2 {
   margin-top: 80px;
   cursor: pointer;
 }
-/* line 76, ../sass/screen.scss */
+/* line 80, ../sass/screen.scss */
 div.wrapper > div.container section#main_content div.section h2:hover {
   margin-top: 100px;
   text-shadow: rgba(50, 50, 50, 0.3) 0 0 10px;
@@ -158,7 +163,7 @@ div.wrapper > div.container section#main_content div.section h2:hover {
   -o-transition-duration: 0.15s;
   transition-duration: 0.15s;
 }
-/* line 84, ../sass/screen.scss */
+/* line 88, ../sass/screen.scss */
 div.wrapper > div.container section#main_content div.section h2.blog:hover {
   text-shadow: rgba(50, 50, 50, 0.5) 0 0 10px;
 }
