@@ -2,15 +2,66 @@
 @import "compass/reset";
 
 
-// variables
+/* variables */
 
-$main_raspberry: rgb(166,63,90);
-$main_moss: rgb(179,191,86);
-$main_creme: rgb(242,235,136);
-$main_pumpkin: rgb(242,164,68);
-$main_rapha: rgb(242,114,114);
+$pink: #ff7cc6;
+$dark_grey: #3c3c3c;
+$light_blue: #4e8fe9;
+$red: #ff5858;
+$yellow: #f2e900;
+$green: #54bf42;
 
-// page styling
+/* typography */
+
+h1, h2, p {
+  font-family: monospace;
+}
+
+h1 {
+  font-size: 30px;
+  color: $pink;
+}
+
+h2 {
+  font-size: 20px;
+  color: $dark_grey;
+  margin: 0 0 10px 0;
+}
+
+p {
+  margin-bottom: 10px;
+  line-height: 18px;
+}
+
+p, span {
+  font-size: 14px;
+  color: $dark_grey;
+}
+
+a {
+  color: $light_blue;
+}
+
+/* span thingies */
+span {
+  &.pink {
+    color: $pink;
+  }
+  &.blue {
+    color: $light_blue;
+  }
+  &.red {
+    color: $red;
+  }
+  &.yellow {
+    color: $yellow;
+  }
+  &.green {
+    color: $green;
+  }
+}
+
+/* page styling */
 
 body, html {
   height: 100%;
@@ -22,74 +73,57 @@ a {
 
 div.wrapper {
   width: 100%;
-  height: 100%;
-  background: rgb(230,230,230);
+  height: 10px;
+  min-height: 100%;
+  background: white;
 
+/* header stuff */
   > header {
-    height: 50px;
     width: 100%;
     position: absolute;
     top: 0;
-    z-index: 2;
-    $experimental-support-for-svg: true;
-    @include background-image(linear-gradient(rgb(40,40,40), rgb(20,20,20)));
-    @include box-shadow(rgba(50,50,50,0.3) 0 5px 10px);
-
-  }
-  > div.container {
-    display: block;
-    padding-top: 50px;
-    height: 100%;
-
-    section#main_content {
-      height: 100%;
-      display: inline-block;
+    height: 50px;
+    background: $dark_grey;
+    
+    /* header trim */
+    &:after {
+      content: '';
       width: 100%;
+      height: 8px;
+      background: rgb(120,120,120);
+      position: absolute;
+      top: 50px;
+    }
 
-      div.section {
-        display: inline-block;
-        width: 20%;
-        height: 100%;
-        float: left;
-        text-align: center;
+    div.content {
+      width: 768px;
+      margin: 0 auto;
+      
+      > h1 {
+        margin-top: 6px;
+      }
+    }
+  }
 
-        &.blog {
-          background: $main_raspberry;
-        }
-        &.about {
-          background: $main_moss;
-        }
-        &.work {
-          background: $main_creme;
-        }
-        &.contact {
-          background: $main_pumpkin;
-        }
-        &.tbd {
-          background: $main_rapha;
-        }
+  /* main page styling */
+  > div.content {
+    padding-top: 100px;
+    max-width: 768px;
+    margin: 0 auto;
 
-        h2 {
-          font-family: 'Open Sans', arial, sans-serif;
-          font-size: 6.0em;
-          @include transform(rotate(90deg));
-          color: #fff;
-          margin-top: 80px;
-          cursor: pointer;
+    div.skills, div.work, div.contact, div.picture {
+      margin-top: 40px;
+    }
 
-          &:hover {
-            margin-top: 100px;
-            @include text-shadow(rgba(50,50,50,0.3) 0 0 10px);
-            @include transition-property(margin-top,text-shadow);
-            @include transition-duration(0.15s);
-          }
-
-          &.blog {
-            &:hover {
-              @include text-shadow(rgba(50,50,50,0.5) 0 0 10px);
-            }
-          }
-        }
+    div.picture {
+      padding-bottom: 50px;
+      
+      > figure {
+        width: 245px;
+        height: 230px;
+        background: url(../images/me_mug.png);
+        margin: 0 auto;
+        margin-bottom: 10px;
       }
     }
   }
