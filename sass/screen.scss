@@ -93,6 +93,7 @@ div.wrapper {
       background: rgb(120,120,120);
       position: absolute;
       top: 50px;
+      border-bottom: 5px solid lighten(rgb(120,120,120), 25%);
     }
 
     div.content {

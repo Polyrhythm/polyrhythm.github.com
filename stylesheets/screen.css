@@ -159,31 +159,32 @@ div.wrapper > header:after {
   background: #787878;
   position: absolute;
   top: 50px;
+  border-bottom: 5px solid #b8b8b8;
 }
-/* line 98, ../sass/screen.scss */
+/* line 99, ../sass/screen.scss */
 div.wrapper > header div.content {
   width: 768px;
   margin: 0 auto;
 }
-/* line 102, ../sass/screen.scss */
+/* line 103, ../sass/screen.scss */
 div.wrapper > header div.content > h1 {
   margin-top: 6px;
 }
-/* line 109, ../sass/screen.scss */
+/* line 110, ../sass/screen.scss */
 div.wrapper > div.content {
   padding-top: 100px;
   max-width: 768px;
   margin: 0 auto;
 }
-/* line 114, ../sass/screen.scss */
+/* line 115, ../sass/screen.scss */
 div.wrapper > div.content div.skills, div.wrapper > div.content div.work, div.wrapper > div.content div.contact, div.wrapper > div.content div.picture {
   margin-top: 40px;
 }
-/* line 118, ../sass/screen.scss */
+/* line 119, ../sass/screen.scss */
 div.wrapper > div.content div.picture {
   padding-bottom: 50px;
 }
-/* line 121, ../sass/screen.scss */
+/* line 122, ../sass/screen.scss */
 div.wrapper > div.content div.picture > figure {
   width: 245px;
   height: 230px;
