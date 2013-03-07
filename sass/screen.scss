@@ -22,12 +22,6 @@ h1 {
   color: $pink;
 }
 
-h2 {
-  font-size: 20px;
-  color: $dark_grey;
-  margin: 0 0 10px 0;
-}
-
 p {
   margin-bottom: 10px;
   line-height: 18px;
@@ -42,24 +36,6 @@ a {
   color: $light_blue;
 }
 
-/* span thingies */
-span {
-  &.pink {
-    color: $pink;
-  }
-  &.blue {
-    color: $light_blue;
-  }
-  &.red {
-    color: $red;
-  }
-  &.yellow {
-    color: $yellow;
-  }
-  &.green {
-    color: $green;
-  }
-}
 
 /* page styling */
 
@@ -84,22 +60,11 @@ div.wrapper {
     top: 0;
     height: 50px;
     background: $dark_grey;
-    
-    /* header trim */
-    &:after {
-      content: '';
-      width: 100%;
-      height: 8px;
-      background: rgb(120,120,120);
-      position: absolute;
-      top: 50px;
-      border-bottom: 5px solid lighten(rgb(120,120,120), 25%);
-    }
 
     div.content {
       width: 768px;
       margin: 0 auto;
-      
+
       > h1 {
         margin-top: 6px;
       }
@@ -111,21 +76,5 @@ div.wrapper {
     padding-top: 100px;
     max-width: 768px;
     margin: 0 auto;
-
-    div.skills, div.work, div.contact, div.picture {
-      margin-top: 40px;
-    }
-
-    div.picture {
-      padding-bottom: 50px;
-      
-      > figure {
-        width: 245px;
-        height: 230px;
-        background: url(../images/me_mug.png);
-        margin: 0 auto;
-        margin-bottom: 10px;
-      }
-    }
   }
 }
