@@ -1,13 +1,21 @@
 $(document).ready(function() {
     $('.terminal_window').terminal(function(command, term) {
-        if (command == 'about') {
-            term.echo("Ryan Jones is a developer based in San Francisco. He'd love to hear from you.");
-        } else if (command == 'contact') {
-            term.echo('ryan.joshua.jones@gmail.com');
-        } else if (command == 'help') {
-            term.echo('the commands are listed above, you bozo');
-        } else {
-            term.echo('unknown command');
+        switch(command) {
+        case "help":
+            term.echo("if this command is necessary then i have failed");
+            break;
+
+        case "about":
+            term.echo("ryan jones is a developer in san francisco. he'd love to hear from you");
+            break;
+
+        case "contact":
+            term.echo("ryan.joshua.jones@gmail.com");
+            break;
+
+        default:
+            term.echo(command + " is not a recognized command");
+            break;
         }
     }, { prompt: '> ', name: 'primary', greetings: "[about] [contact]" });
 
