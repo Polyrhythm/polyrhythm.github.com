@@ -1,6 +1,6 @@
 $(document).ready(function() {
     $('.terminal_window').terminal(function(command, term) {
-        switch(command) {
+        switch(command.toLowerCase()) {
         case "help":
             term.echo("if this command is necessary then i have failed");
             break;
