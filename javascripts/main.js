@@ -1,12 +1,17 @@
 $(document).ready(function() {
+    var greeting = "thank you for visiting my terminal. please enjoy your stay.\n\n" +
+        "[about] [contact]" +
+        " | type 'help' for additional commands.\n\n";
+
     $('.terminal_window').terminal(function(command, term) {
         switch(command.toLowerCase()) {
         case "help":
-            term.echo("if this command is necessary then i have failed");
+            term.echo("more soon");
             break;
 
         case "about":
-            term.echo("ryan jones is a developer in san francisco. he'd love to hear from you");
+            term.echo("ryan jones is a developer in san francisco. he'd love to hear from you\n" +
+                     "http://github.com/polyrhythm");
             break;
 
         case "contact":
@@ -17,7 +22,7 @@ $(document).ready(function() {
             term.echo(command + " is not a recognized command");
             break;
         }
-    }, { prompt: '> ', name: 'primary', greetings: "[about] [contact]" });
+    }, { prompt: '> ', name: 'primary', greetings: greeting });
 
     $('.terminal_window').bind('mousewheel', function(event, delta, deltaX, deltaY) {
         console.log(delta, deltaX, deltaY);

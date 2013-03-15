@@ -13,12 +13,6 @@ div.padding {
 
 /* typography */
 
-h1 {
-  font-family: monospace;
-  color: black;
-  font-size: 30px;
-}
-
 div.wrapper {
   position: absolute;
   top: 0;
@@ -28,19 +22,17 @@ div.wrapper {
   background: pink;
   overflow: auto;
 
-  div.top-content {
-    width: 768px;
+  h1 {
+    display: inline-block;
     margin: 0 auto;
+    margin-bottom: 30px;
+  }
 
-    h1 {
-      display: inline-block;
-      margin: 0 auto;
-      margin-bottom: 30px;
-    }
-
-    div.terminal_window {
-      height: 600px;
-      width: 100%;
-    }
+  div.terminal_window {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    right: 10px;
+    bottom: 10px;
   }
 }

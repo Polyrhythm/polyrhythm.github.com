@@ -77,13 +77,6 @@ div.padding {
 
 /* typography */
 /* line 16, ../sass/screen.scss */
-h1 {
-  font-family: monospace;
-  color: black;
-  font-size: 30px;
-}
-
-/* line 22, ../sass/screen.scss */
 div.wrapper {
   position: absolute;
   top: 0;
@@ -93,19 +86,17 @@ div.wrapper {
   background: pink;
   overflow: auto;
 }
-/* line 31, ../sass/screen.scss */
-div.wrapper div.top-content {
-  width: 768px;
-  margin: 0 auto;
-}
-/* line 35, ../sass/screen.scss */
-div.wrapper div.top-content h1 {
+/* line 25, ../sass/screen.scss */
+div.wrapper h1 {
   display: inline-block;
   margin: 0 auto;
   margin-bottom: 30px;
 }
-/* line 41, ../sass/screen.scss */
-div.wrapper div.top-content div.terminal_window {
-  height: 600px;
-  width: 100%;
+/* line 31, ../sass/screen.scss */
+div.wrapper div.terminal_window {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  right: 10px;
+  bottom: 10px;
 }
