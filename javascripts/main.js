@@ -22,7 +22,7 @@ $(document).ready(function() {
             term.echo(command + " is not a recognized command");
             break;
         }
-    }, { prompt: '> ', name: 'primary', greetings: greeting });
+    }, { prompt: '> ', name: 'primary', greetings: greeting, clear: false });
 
     $('.terminal_window').bind('mousewheel', function(event, delta, deltaX, deltaY) {
         console.log(delta, deltaX, deltaY);

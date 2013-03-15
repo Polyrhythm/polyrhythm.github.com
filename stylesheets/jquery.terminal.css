@@ -1,90 +1,135 @@
+/* terminal styling */
+/* line 6, ../sass/jquery.terminal.scss */
 .terminal .terminal-output .format, .terminal .cmd .format,
-.terminal .cmd .prompt, .terminal .cmd .prompt div, .terminal .terminal-output div div{
-    display: inline-block;
-}
-.terminal .clipboard {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    opacity: 0.01;
-    filter: alpha(opacity = 0.01);
-    filter: progid:DXImageTransform.Microsoft.Alpha(opacity=0.01);
-    width: 2px;
-}
-.cmd > .clipboard {
-    position: fixed;
-}
-.terminal {
-    padding: 10px;
-    position: relative;
-    overflow: hidden;
-}
-.cmd {
-    padding: 0;
-    margin: 0;
-    height: 1.3em;
-    margin-top: 3px;
-}
-.terminal .terminal-output div div, .terminal .prompt {
-    display: block;
-    line-height: 14px;
-    height: auto;
-}
-.terminal .prompt {
-    float: left;
+.terminal .cmd .prompt, .terminal .cmd .prompt div, .terminal .terminal-output div div {
+  display: inline-block;
 }
 
+/* line 9, ../sass/jquery.terminal.scss */
+.terminal .clipboard {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  opacity: 0.01;
+  filter: alpha(opacity=0.01);
+  filter: progid:DXImageTransform.Microsoft.Alpha(opacity=0.01);
+  width: 2px;
+}
+
+/* line 18, ../sass/jquery.terminal.scss */
+.cmd > .clipboard {
+  position: fixed;
+}
+
+/* line 21, ../sass/jquery.terminal.scss */
 .terminal {
-    font-family: FreeMono, monospace;
-    color: #aaa;
-    background-color: #000;
-    font-size: 12px;
-    line-height: 14px;
+  padding: 10px;
+  position: relative;
+  overflow: hidden;
 }
+
+/* line 26, ../sass/jquery.terminal.scss */
+.cmd {
+  padding: 0;
+  margin: 0;
+  height: 1.3em;
+  margin-top: 3px;
+}
+
+/* line 32, ../sass/jquery.terminal.scss */
+.terminal .terminal-output div div, .terminal .prompt {
+  display: block;
+  line-height: 14px;
+  height: auto;
+}
+
+/* line 37, ../sass/jquery.terminal.scss */
+.terminal .prompt {
+  float: left;
+}
+
+/* line 41, ../sass/jquery.terminal.scss */
+.terminal {
+  font-family: FreeMono, monospace;
+  color: #aaa;
+  background-color: #000;
+  font-size: 12px;
+  line-height: 14px;
+}
+
+/* line 48, ../sass/jquery.terminal.scss */
 .terminal-output > div {
-    padding-top: 3px;
+  padding-top: 3px;
 }
+
+/* line 51, ../sass/jquery.terminal.scss */
 .terminal .terminal-output div span {
-    display: inline-block;
+  display: inline-block;
 }
+
+/* line 54, ../sass/jquery.terminal.scss */
 .terminal .cmd span {
-    float: left;
-    /*display: inline-block; */
+  float: left;
+  /*display: inline-block; */
 }
+
+/* line 58, ../sass/jquery.terminal.scss */
 .terminal .cmd span.inverted {
-    background-color: #aaa;
-    color: #000;
+  background-color: #aaa;
+  color: #000;
 }
+
+/* line 64, ../sass/jquery.terminal.scss */
 .terminal .terminal-output div div::-moz-selection,
 .terminal .terminal-output div span::-moz-selection,
 .terminal .terminal-output div div a::-moz-selection {
-    background-color: #aaa;
-    color: #000;
+  background-color: #aaa;
+  color: #000;
 }
+
+/* line 72, ../sass/jquery.terminal.scss */
 .terminal .terminal-output div div::selection,
 .terminal .terminal-output div div a::selection,
 .terminal .terminal-output div span::selection,
 .terminal .cmd > span::selection,
 .terminal .prompt span::selection {
-    background-color: #aaa;
-    color: #000;
+  background-color: #aaa;
+  color: #000;
 }
+
+/* line 76, ../sass/jquery.terminal.scss */
 .terminal .terminal-output div.error, .terminal .terminal-output div.error div {
-    color: red;
+  color: red;
 }
+
+/* line 79, ../sass/jquery.terminal.scss */
 .tilda {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    z-index: 1100;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1100;
 }
+
+/* line 86, ../sass/jquery.terminal.scss */
 .clear {
-    clear: both;
+  clear: both;
 }
+
+/* link styling */
+/* line 91, ../sass/jquery.terminal.scss */
 .terminal a {
-    color: #0F60FF;
+  color: #00cccc;
 }
+/* line 93, ../sass/jquery.terminal.scss */
 .terminal a:hover {
-    color: red;
+  color: #009999;
+  -moz-transition-property: color;
+  -webkit-transition-property: color;
+  -o-transition-property: color;
+  transition-property: color;
+  -moz-transition-duration: 0.15s;
+  -webkit-transition-duration: 0.15s;
+  -o-transition-duration: 0.15s;
+  transition-duration: 0.15s;
 }
