@@ -10,7 +10,7 @@ $(document).ready(function() {
             break;
 
         case "about":
-            term.echo("i'm a developer san francisco. currently, i work as a front-end engineer. i'd love to hear from you\n" +
+            term.echo("i'm a developer in san francisco. currently, i work as a front-end engineer. i'd love to hear from you\n" +
                      "http://github.com/polyrhythm");
             break;
 
