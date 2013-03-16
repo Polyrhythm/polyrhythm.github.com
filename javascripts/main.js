@@ -6,7 +6,7 @@ $(document).ready(function() {
     $('.terminal_window').terminal(function(command, term) {
         switch(command.toLowerCase()) {
         case "help":
-            term.echo("bicycles");
+            term.echo("available commands:\n [about] [contact] [bicycles]");
             break;
 
         case "about":
