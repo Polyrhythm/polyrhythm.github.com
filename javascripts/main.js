@@ -6,7 +6,7 @@ $(document).ready(function() {
     $('.terminal_window').terminal(function(command, term) {
         switch(command.toLowerCase()) {
         case "help":
-            term.echo("more soon");
+            term.echo("bicycles");
             break;
 
         case "about":
@@ -16,6 +16,10 @@ $(document).ready(function() {
 
         case "contact":
             term.echo("ryan.joshua.jones@gmail.com");
+            break;
+
+        case "bicycles":
+            term.echo("bikes, i ride them\nhttp://app.strava.com/athletes/104267");
             break;
 
         default:
