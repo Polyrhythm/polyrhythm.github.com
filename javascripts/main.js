@@ -27,7 +27,7 @@ $(document).ready(function() {
                 "http://polyrhythm.github.io/owl_man");
       break;
 
-      case "responsive";
+      case "responsive":
       term.echo("below is an example of a responsive layout I have designed:\n" +
                 "http://polyrhythm.github.io/responsive_abstract");
       break;
