@@ -32,8 +32,9 @@ $(document).ready(function() {
                 "http://polyrhythm.github.io/responsive_abstract");
       break;
 
-      case 'resume':
+      case "resume":
       term.echo("http://polyrhythm.github.io/resume.html")
+      break;
 
       default:
       term.echo(command + " is not a recognized command");
