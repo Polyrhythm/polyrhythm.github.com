@@ -6,7 +6,7 @@ $(document).ready(function() {
   $('.terminal_window').terminal(function(command, term) {
     switch(command.toLowerCase()) {
       case "help":
-      term.echo("available commands:\n[about] [contact] [bicycles] [owls] [responsive]");
+      term.echo("available commands:\n[about] [contact] [bicycles] [owls] [responsive] [resume]");
       break;
 
       case "about":
@@ -31,6 +31,9 @@ $(document).ready(function() {
       term.echo("below is an example of a responsive layout I have designed:\n" +
                 "http://polyrhythm.github.io/responsive_abstract");
       break;
+
+      case 'resume':
+      term.echo("http://polyrhythm.github.io/resume.html")
 
       default:
       term.echo(command + " is not a recognized command");
