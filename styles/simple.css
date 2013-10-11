@@ -1,0 +1,7 @@
+.crumb {
+  position: absolute;
+  background: black;
+  width: 3px;
+  height: 3px;
+  border-radius: 50%;
+}
