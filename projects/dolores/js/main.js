@@ -3,12 +3,23 @@
 
   // set up the ~world~
   var addIceCream;
-  var quotes = [
+  var normalQuotes = [
     'Man, I would love some ice cream.',
     'Sweet fixie, bro.',
     'Where can I find an overpriced coffee?',
     'Have you heard of #bubblepops?',
-    'Let\'s smoke some weed!'
+    'Let\'s smoke some weed!',
+    'Time for some brunch',
+    'Gentrification rules!',
+    'My dad is paying my rent for me',
+    'You work at [insert startup here] too?!',
+    'I only buy the finest $20 organic apples.'
+  ];
+  var fatQuotes = [
+    'WHERE\'S THE CORN DOGS?',
+    'FEED ME MORE!',
+    'MUST EAT MORE THINGS',
+    'I CAN\'T RESIST THE DELICIOUS SUGAR!'
   ];
 
   Flora.System.setup(function() {
@@ -37,27 +48,43 @@
     };
 
     var addHipster = function(location, velocity) {
+      var walker = this.add('Walker', {
+        location: location,
+        opacity: 0,
+        wrapWorldEdges: true
+      });
+
       var hipster = this.add('Agent', {
         type: 'Hipster',
         color: [0, 255, 0],
-        maxSpeed: 2,
-        maxSteeringForce: 10,
         location: location,
         velocity: velocity,
-        motorSpeed: 5,
+        seekTarget: walker,
         wrapWorldEdges: true,
         sensors: [
           this.add('Sensor', {
             type: 'IceCream',
             targetClass: 'IceCream',
             sensitivity: 300,
-            displayRange: true,
+            displayRange: false,
             opacity: 0,
             behavior: 'DESTROY',
             onDestroy: function(sensor, iceCream) {
               hipster.width += 2;
               hipster.height += 2;
+              if (hipster.maxSpeed > 5) hipster.maxSpeed -= 1;
+
+              if (hipster.width >= 15 && !hipster.firstName.match(/fat/)) {
+                hipster.firstName = 'fat-' + hipster.firstName;
+              }
             }
+          }),
+          this.add('Sensor', {
+            type: 'IceCream',
+            targetClass: 'IceCream',
+            sensitivity: 300,
+            opacity: 0,
+            behavior: 'AGGRESSIVE'
           })
         ],
         beforeStep: function() {
@@ -110,6 +137,10 @@
             hipster.speechBubble.className = 'speech-container';
 
             var speechHTML = '<b>' + hipster.firstName + ':<b><br/><br/>';
+
+            // say contextually-correct things!
+            var quotes = (hipster.width < 15) ? normalQuotes : fatQuotes;
+
             speechHTML += quotes[
               Flora.Utils.getRandomNumber(0, quotes.length - 1)
             ];
@@ -147,6 +178,7 @@
       });
 
       iceCream.type = 'IceCream';
+      iceCream.el.classList.add('icecream');
     }.bind(this);
   });
 
