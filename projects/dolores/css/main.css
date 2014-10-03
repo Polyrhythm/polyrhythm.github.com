@@ -1,0 +1,15 @@
+body {
+  cursor: pointer;
+}
+
+.speech-container {
+  display: inline-block;
+  background: white;
+  padding: 1em;
+  border-radius: 5px;
+  border: 2px solid #ccc;
+  font-size: 0.75em;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
