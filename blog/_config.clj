@@ -11,7 +11,7 @@
  ;;   ex)
  ;;     "/"    => "/YYYY-MM/POST.html"
  ;;     "/foo" => "/foo/YYYY-MM/POST.html"
- :url-base     "/"
+ :url-base     "/blog/public"
 
  ;; dev server port
  ;;   default value: 8080
@@ -96,4 +96,3 @@
  ;;   default value: "default"
  :compiler "default"
  }
-
