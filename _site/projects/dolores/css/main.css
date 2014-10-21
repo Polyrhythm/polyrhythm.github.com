@@ -1,0 +1,54 @@
+body {
+  cursor: pointer;
+}
+
+.speech-container {
+  display: inline-block;
+  background: white;
+  padding: 1em;
+  border-radius: 5px;
+  border: 2px solid #ccc;
+  font-size: 1.0em;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.icecream {
+  border-radius: 50% !important;
+}
+
+.icecream:after {
+  content: '';
+  position: absolute;
+  top: 20px;
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 30px 15px 0 15px;
+  border-color: #a39a39 transparent transparent transparent;
+}
+
+.title {
+  font-size: 3em;
+  color: white;
+  position: relative;
+  text-align: center;
+  font-family: monospace;
+}
+
+.tutorial {
+  padding: 1em;
+  border: 1px solid #ccc;
+  position: absolute;
+  top: 50px;
+  left: 30px;
+  background: none;
+  color: #fff;
+}
+
+.tutorial .question-mark {
+  font-weight: bold;
+  font-size: 1.75em;
+  margin-right: 0.5em;
+}
