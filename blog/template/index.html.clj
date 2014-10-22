@@ -11,7 +11,7 @@
 (header
   (:title site)
   "rambling thoughts of "
-  (link "polyrhytm" "http://polyrhythm.github.io"))
+  (link "polyrhythm" "http://polyrhythm.github.io"))
 
 ;; Sample posts
 (page-header "Sample posts")
