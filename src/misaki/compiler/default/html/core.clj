@@ -373,7 +373,6 @@
         attr (merge-with #(str/join " " %&) {:class "paragraph"} opt)]
     [:p attr (map parse-string s)]))
 
-; =header-decoration
 (defn- header-decoration [x]
   (if (string? x)
     (let [[first-char & rest-chars] x]
@@ -386,7 +385,7 @@
   "Make default header tag."
   [h & p]
   [:header
-   [:h1 (link (header-decoration h) (cnf/get-index-filename))]
+   [:h1 (link "polyrhythm.github.io" "http://polyrhythm.github.io")]
    (if p [:p p])])
 
 ; =container

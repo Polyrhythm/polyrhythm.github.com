@@ -23,16 +23,12 @@
 ; /head
 
 [:body
-
- ; github ribbon
- (github-ribbon "https://github.com/liquidz/misaki")
-
  (container
   contents
 
   (footer
     (link (str "@" (:twitter site)) (str "http://twitter.com/" (:twitter site)))
-    "&nbsp; 2013"))
+    "&nbsp; 2014"))
  ; /container
 
  (js ["/js/prettify.js"

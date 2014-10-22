@@ -3,15 +3,15 @@
 ; @title   home
 
 ;; Your own function in template
-(defn page-header [[fs & rs]]
+(defn page-header [stuff]
   [:div {:class "page-header"}
-   [:h1 [:span fs] rs]])
+   [:h1 stuff]])
 
 ; Template is compiled with hiccup
 (header
   (:title site)
-  (link "Jekyll" "https://github.com/mojombo/jekyll")
-  " inspired static site generator in Clojure")
+  "rambling thoughts of "
+  (link "polyrhytm" "http://polyrhythm.github.io"))
 
 ;; Sample posts
 (page-header "Sample posts")
@@ -39,8 +39,8 @@
 ; Template is compiled with hiccup
 (header
   (:title site)
-  (link "Jekyll" "https://github.com/mojombo/jekyll")
-  " inspired static site generator in Clojure")
+  ("rambling thoughts of ")
+  (link "polyrhythm" "http://polyrhythm.github.io"))
 
 ;; Sample posts
 (page-header "Sample posts")

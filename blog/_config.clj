@@ -12,7 +12,7 @@
  ;;     "/"    => "/YYYY-MM/POST.html"
  ;;     "/foo" => "/foo/YYYY-MM/POST.html"
  :url-base     "/blog/public"
-
+ 
  ;; dev server port
  ;;   default value: 8080
  :port 8080
@@ -24,12 +24,12 @@
  ;; default site data
  :site {:atom-base  "http://polyrhythm.github.io" ; please change "localhost:8080" to your blog domain
         :charset    "utf-8"
-        :site-title "bloog"
+        :site-title "polyrhythm"
+        :title      "bloog"
         :twitter    "polyrhytmical"
         :css        ["http://fonts.googleapis.com/css?family=Josefin+Sans"
-                     "/css/main.css"
-                     "/css/extra.css"]
-        :device-css ["/css/smartphone.css"]
+                     "/css/main.css"]
+        :device-css ["/css/mobile.css"]
         :js         ["/js/main.js"]}
 
  ;; post file compile hook
